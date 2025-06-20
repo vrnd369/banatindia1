@@ -1,0 +1,819 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  background: #f3f0f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left img {
+  max-width: 80%;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.login-right {
+  flex: 1;
+  background: #fff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.brand-text {
+  color: #07b39b;
+}
+
+.login-subtitle {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Center social buttons */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.login-social {
+  width: 80%;
+  max-width: 360px;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.google {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.google .icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ddd;
+  z-index: 0;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  padding: 14px;
+  width: 80%;
+  max-width: 360px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 360px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-options a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-submit {
+  padding: 12px;
+  background-color: #07b39b;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  width: 80%;
+  max-width: 360px;
+}
+
+.login-footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.login-footer a {
+  color: #07b39b;
+  font-weight: 600;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: #07b39b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Banat.com Amazon-style login page */
+.banat-login-bg {
+  min-height: 100vh;
+  background: #f6f7f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banat-login-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 24px 28px 20px 28px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.banat-login-logo {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.banat-login-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+  text-align: center;
+}
+.banat-login-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banat-login-label {
+  font-size: 0.9rem;
+  color: #222;
+  font-weight: 500;
+  margin-bottom: 4px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+.banat-login-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d1e7ea;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-top: 2px;
+  background: #f6fafd;
+}
+.banat-login-input:focus {
+  border-color: #00b5ad;
+  box-shadow: 0 0 0 2px #00b5ad22;
+}
+.banat-login-btn {
+  width: 100%;
+  background: #222;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 32px;
+  padding: 11px 0 9px 0;
+  margin: 22px 0 8px 0;
+  cursor: pointer;
+  transition: background 0.18s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  letter-spacing: 0.01em;
+  align-self: center;
+}
+.banat-login-btn:hover {
+  background: #00b5ad;
+}
+.banat-login-terms {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.banat-login-terms a {
+  color: #00b5ad;
+  text-decoration: underline;
+}
+.banat-login-divider {
+  border-top: 1px solid #e5e7eb;
+  margin: 18px 0 12px 0;
+}
+.banat-login-business {
+  font-size: 0.98rem;
+  color: #222;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.banat-login-business-link {
+  color: #00b5ad;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 2px;
+}
+@media (max-width: 500px) {
+  .banat-login-card {
+    padding: 18px 4vw 18px 4vw;
+    max-width: 98vw;
+  }
+  .banat-login-logo {
+    font-size: 1.5rem;
+  }
+}
+
+.banat-logo-amazon-style {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+}
+.banat-login-methods {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+}
+.banat-login-method-btn {
+  background: #f6f7f9;
+  border: 2px solid #d1e7ea;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.01rem;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s;
+  outline: none;
+}
+.banat-login-method-btn.active, .banat-login-method-btn:hover {
+  border-bottom: 2px solid #00b5ad;
+  border-color: #00b5ad #00b5ad #fff #00b5ad;
+  background: #fff;
+  color: #00b5ad;
+  z-index: 2;
+}
+.banat-login-facebook-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00b5ad;
+  color: #fff;
+  transition: background 0.18s;
+}
+.banat-login-facebook-btn:hover {
+  background: #009a94;
+}
+/* Remove business account styles */
+.banat-login-business, .banat-login-business-link, .banat-login-divider { display: none !important; }
+
+.banat-login-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banat-login-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 2rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: color 0.18s;
+}
+.banat-login-modal-close:hover {
+  color: #222;
+}
+
+.banat-login-choice-btn {
+  width: 100%;
+  background: #fff;
+  color: #00b5ad;
+  border: 2px solid #00b5ad;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-radius: 32px;
+  padding: 13px 0 11px 0;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  letter-spacing: 0.01em;
+}
+.banat-login-choice-btn:hover {
+  background: #00b5ad;
+  color: #fff;
+}
+.banat-login-back-link {
+  background: none;
+  border: none;
+  color: #00b5ad;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 8px;
+  margin-top: 0;
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-left {
+  flex: 1;
+  background: #f7fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.login-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-right {
+  flex: 1;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #718096;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  color: #4a5568;
+  transform: rotate(90deg);
+}
+
+.banat-login-logo {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.banat-logo {
+  height: 48px;
+  width: auto;
+}
+
+h2 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.error-message {
+  background: #fff5f5;
+  color: #c53030;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #00b5ad;
+  box-shadow: 0 0 0 3px rgba(0, 181, 173, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #a0aec0;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.875rem;
+  background: #00b5ad;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: #009c95;
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+  padding: 0 1rem;
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.google-button,
+.facebook-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background: white;
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.google-button:hover,
+.facebook-button:hover {
+  background: #f7fafc;
+  transform: translateY(-1px);
+}
+
+.google-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.facebook-icon {
+  color: #4267B2;
+  font-size: 1.25rem;
+}
+
+.terms {
+  margin-top: 1.5rem;
+  color: #718096;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    flex-direction: column;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .modal-left {
+    display: none;
+  }
+
+  .modal-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .banat-login-logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .banat-logo {
+    height: 40px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .submit-button,
+  .google-button,
+  .facebook-button {
+    padding: 0.75rem;
+  }
+}
+
+/* Login Method Toggle */
+.login-method-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  color: #666;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+  border-color: #07b39b;
+  color: #07b39b;
+}
+
+.toggle-button.active {
+  border-color: #07b39b;
+  background: #07b39b;
+  color: #fff;
+}
+
+.toggle-button svg {
+  font-size: 16px;
+}
+
+/* Phone Authentication Styles */
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.country-code {
+  background: #f8f9fa;
+  padding: 14px 12px;
+  border-right: 1px solid #ccc;
+  color: #666;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.phone-input-container input {
+  flex: 1;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  outline: none;
+}
+
+.phone-input-container input:focus {
+  box-shadow: none;
+}
+
+.input-hint {
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.recaptcha-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.change-number-button {
+  background: none;
+  border: none;
+  color: #07b39b;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 0;
+  margin-top: 10px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.change-number-button:hover {
+  color: #059b85;
+}
+
+.change-number-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+  text-decoration: none;
+}

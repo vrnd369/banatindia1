@@ -1,0 +1,71 @@
+.home-carousel {
+  max-width: 800px;
+  margin: 40px auto 30px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+/* Align navbar links to the right 
+.main-navbar {
+  display: flex;
+  justify-content:center;
+  gap: 24px;
+  background: #fff;
+  padding: 18px 40px 18px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-family: inherit;
+}
+
+.main-navbar a {
+  text-decoration: none;
+  color: #07b39b;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 6px 16px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.main-navbar a:hover {
+  background: #e3f2fd;
+  color: #07b39b;
+}*/
+
+/* Big Carousel Styles - Full viewport */
+.big-carousel-container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: none;
+  background: #fff;
+  position: relative;
+}
+
+.big-carousel .carousel .slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.big-carousel .carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100vh;
+}
+.carousel-slide-with-logo {
+  position: relative;
+}
+.rotating-top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
